@@ -384,7 +384,7 @@ button:disabled {
     left: 50%;
     position: absolute;
     top: -16px;
-    Dd width: 80px;
+    width: 80px;
 }
 
 .bottom-sheet .btn-close {
