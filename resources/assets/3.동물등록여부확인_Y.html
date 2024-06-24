@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Pet PASS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- START : Header -->
+        <header class="header">
+            <div class="container">
+                <a href="#">
+                    <i class="ico i-back"></i>
+                </a>
+                <h2>Pet Pass</h2>
+            </div>
+        </header>
+        <!-- END : Header -->
+
+        <!-- START : Content -->
+        <main>
+            <div class="pet-wrap">
+                <section class="container">
+                    <h1>동물등록 여부를 확인해주세요.</h1>
+                    <h4>안전한 키녹 이용을 위해<br>동물등록 여부를 확인하고 있습니다</h4>
+                    <div class="radio-wrap mt-10">
+                        <div class="radio-group outline">
+                            <input type="radio" id="radio01" name="radio01">
+                            <label for="radio01">국가동물등록 번호가 있어요</label>
+                        </div>
+                        <div class="radio-group outline">
+                            <input type="radio" id="radio02" name="radio01">
+                            <label for="radio02">국가동물등록 번호가 없어요</label>
+                        </div>
+                    </div>
+                    <div class="tooltip mt-3">
+                        <i class="ico i-tooltip"></i>
+                        <p>국가동물등록번호가 무엇인가요?</p>
+                        <div class="tooltip-box">
+                            <h6>농림축산검역본부에서 발급한<br>
+                                15자리 고유번호로 등록하지 않은<br>
+                                경우 과태료 부과대상입니다</h6>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-md btn-primary">확인</button>
+                    </div>
+                </section>
+
+
+            </div>
+        </main>
+        <!-- END : Content -->
+
+    </div>
+
+
+    <!-- START : Script -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- END : Script -->
+</body>
+
+</html>
