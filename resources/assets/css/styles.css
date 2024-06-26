@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(common.css);
+@import url(../lib/swiper-bundle.min.css);
 @import url(ico.css);
 
 
@@ -342,6 +343,20 @@
 /* **************************************** *
  * 7. 출입QR
  * **************************************** */
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .pet-wrap.gray {
     background: var(--kw-primary-50);
 }
@@ -352,8 +367,13 @@
     border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
-    padding: 2.5rem 2.25rem;
+    width: 100%;
+}
+
+.qrcode-body {
+    border-bottom: 1px solid #dddddd;
+    padding: 28px 16px 16px 16px;
+    width: 100%;
 }
 
 .qrcode h1 {
@@ -362,12 +382,15 @@
 
 .qrcode h5 {
     color: var(--kw-black-900);
+    font-size: var(--kw-text-md);
+    line-height: 1.4;
+    margin: 12px 0 16px 0;
     text-align: center;
 }
 
 .qrcode img {
-    max-width: 280px;
-    width: 100%;
+    margin: 0 auto;
+    width: 200px;
 }
 
 .qrcode ul {
@@ -377,34 +400,76 @@
     width: 100%;
 }
 
-.qrcode ul.center {
-    justify-content: center;
-}
-
-.qrcode li.name {
+.qrcode h6 {
     color: var(--kw-black-950);
-    font-size: var(--kw-text-xxl);
+    font-size: var(--kw-text-xl);
     font-weight: 600;
     overflow: hidden;
+    margin: 16px 0 0 0;
     text-overflow: ellipsis;
-    width: calc(100% - 160px);
-    white-space: nowrap;
-}
-
-.qrcode ul.center li.name {
-    color: var(--kw-black-950);
-    font-size: var(--kw-text-xxl);
-    font-weight: 600;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
     width: calc(100% - 10px);
     white-space: nowrap;
 }
 
-.qrcode li.day {
+.qrcode p {
     color: var(--kw-black-900);
-    font-size: var(--kw-text-lg);
+    font-size: var(--kw-text-md);
+}
+
+.qrcode-bottom {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    width: 100%;
+}
+
+.qrcode-bottom dl {
+    display: flex;
+    width: 100%;
+}
+
+.qrcode-bottom dl dt {
+    color: var(--kw-black-500);
+    font-size: var(--kw-text-md);
     font-weight: 400;
+}
+
+.qrcode-bottom dl dd {
+    color: var(--kw-black-900);
+    font-size: var(--kw-text-md);
+    font-weight: 500;
     margin: 0 0 0 auto;
+}
+
+.qrcodeSwiper .swiper-button-next,
+.qrcodeSwiper .swiper-button-prev {
+    height: 24px;
+    width: 24px;
+}
+
+.qrcodeSwiper .swiper-button-next::after,
+.qrcodeSwiper .swiper-button-prev::after {
+    color: var(--kw-black-800);
+    font-size: 20px;
+}
+
+.qrcode-swiper-wrap {
+    position: relative;
+}
+.qrcode-swiper-wrap .swiper-pagination {
+    bottom: -28px;
+}
+
+.qrcode-swiper-wrap .swiper-pagination-bullet {
+    background: #222;
+    opacity: 0.5;
+}
+
+.qrcode-swiper-wrap .swiper-pagination-bullet-active {
+    background: #222;
+    border-radius: 100px;
+    opacity: 1;
+    width: 12px;
 }

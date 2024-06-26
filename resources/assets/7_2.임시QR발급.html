@@ -27,15 +27,41 @@
         <main>
             <div class="pet-wrap gray">
                 <section class="container">
-                    <div class="qrcode">
-                        <h1>임시 QR 발급완료</h1>
-                        <h5>발급된 QR을 스캔하시면 출입인증이<br>
-                            완료되며, 원활한 출입을 위해,<br>
-                            국가동물등록을 진행해주세요.</h5>
-                        <img src="img/qrcode.png" alt="임시 QR코드">
-                        <ul class="center">
-                            <li class="name">클루니클루니클루니클루니클루니클루니</li>
-                        </ul>
+                    <div class="qrcode-swiper-wrap">
+                        <div class="swiper qrcodeSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="qrcode">
+                                        <div class="qrcode-body">
+                                            <h1>임시 QR 발급완료</h1>
+                                            <h5>발급된 QR을 스캔하시면 출입인증이<br>
+                                                완료되며, 원활한 출입을 위해,<br>
+                                                국가동물등록을 진행해주세요.</h5>
+                                            <img src="img/qrcode.png" alt="임시 QR코드">
+                                            <h6>클루니클루니클루니클루니클루니클루니클루니클루니</h6>
+                                        </div>
+                                        <div class="qrcode-bottom">
+                                            <dl>
+                                                <dt>동반인원 수</dt>
+                                                <dd>1명</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>반려동물 대/중/소 구분</dt>
+                                                <dd>대형</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>QR 유효기간</dt>
+                                                <dd>2024.03.20 23:59</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-slide">Slide 2</div> -->
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </section>
             </div>
@@ -47,6 +73,21 @@
 
     <!-- START : Script -->
     <script src="lib/jquery.min.js"></script>
+    <script src="lib/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".qrcodeSwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+
     <script src="js/common.js"></script>
     <!-- END : Script -->
 </body>
