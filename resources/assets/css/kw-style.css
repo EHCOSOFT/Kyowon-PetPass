@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import url(common.css);
+@import url(kw-common.css);
 @import url(../lib/swiper-bundle.min.css);
-@import url(ico.css);
+@import url(kw-ico.css);
 
 
 /*
@@ -287,7 +287,7 @@
 
 
 .pet-item.active button i {
-    background: url(../img/ico/i-check-active.png);
+    background: url(../kw-img/ico/i-check-active.png);
     background-size: cover;
 }
 

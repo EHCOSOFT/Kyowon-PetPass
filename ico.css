@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+.ico {
+    background-size: cover !important;
+    display: inline-block;
+}
+
+.i-back {
+    background: url(../kw-img/ico/i-back.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-x {
+    background: url(../kw-img/ico/i-x.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-arrow-right {
+    background: url(../kw-img/ico/i-arrow-right.png);
+    height: 0.75rem;
+    width: 0.75rem;
+}
+
+.i-search {
+    background: url(../kw-img/ico/i-search.png);
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.i-calendar {
+    background: url(../kw-img/ico/i-calendar.png);
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.i-arrow-clockwise {
+    background: url(../kw-img/ico/i-arrow-clockwise.png);
+    height: 1rem;
+    width: 1rem;
+}
+
+.i-arrow-down {
+    background: url(../kw-img/ico/i-arrow-down.png);
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.i-circle-down {
+    background: url(../kw-img/ico/i-circle-arrow-down.png);
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.i-boy {
+    background: url(../kw-img/ico/i-boy.png);
+    height: 1rem;
+    width: 1rem;
+}
+
+.i-lady {
+    background: url(../kw-img/ico/i-lady.png);
+    height: 1rem;
+    width: 1rem;
+}
+
+.i-upload {
+    background: url(../kw-img/ico/i-camera-w.png);
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.i-three {
+    background: url(../kw-img/ico/i-three.png);
+    height: 1rem;
+    width: 1rem;
+}
+
+.i-alerm {
+    background: url(../kw-img/ico/i-alerm.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-arrow-left {
+    background: url(../kw-img/ico/i-arrow-left.png);
+    height: 0.75rem;
+    width: 0.75rem;
+}
+
+.i-arrow-right {
+    background: url(../kw-img/ico/i-arrow-left.png);
+    height: 0.75rem;
+    transform: rotate(180deg);
+    width: 0.75rem;
+}
+
+.i-cake-w {
+    background: url(../kw-img/ico/i-cake-w.png);
+    height: 0.75rem;
+    width: 0.75rem;
+}
+
+.i-injection-w {
+    background: url(../kw-img/ico/i-injection-w.png);
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.i-hospital-w {
+    background: url(../kw-img/ico/i-hospital-w.png);
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.i-shopping-w {
+    background: url(../kw-img/ico/i-shopping-w.png);
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.i-beauty-w {
+    background: url(../kw-img/ico/i-beauty-w.png);
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.i-etc-w {
+    background: url(../kw-img/ico/i-etc-w.png);
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.i-plus-w {
+    background: url(../kw-img/ico/i-plus-w.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-time {
+    background: url(../kw-img/ico/i-time.png);
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.i-vaccination {
+    background: url(../kw-img/ico/i-vaccination.png);
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.i-hospital {
+    background: url(../kw-img/ico/i-animal-hospital.png);
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.i-hospital-g {
+    background: url(../kw-img/ico/i-animal-hospital.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-beauty {
+    background: url(../kw-img/ico/i-beauty.png);
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.i-shopping {
+    background: url(../kw-img/ico/i-shopping.png);
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.i-etc {
+    background: url(../kw-img/ico/i-etc.png);
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.i-cat {
+    background: url(../kw-img/cat.png);
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.i-puppy {
+    background: url(../kw-img/puppy.png);
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.i-plus {
+    background: url(../kw-img/ico/i-plus.png);
+    height: 1rem;
+    width: 1rem;
+}
+
+.i-cake {
+    background: url(../kw-img/ico/i-cake.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-injection {
+    background: url(../kw-img/ico/i-injection.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-etc-2 {
+    background: url(../kw-img/ico/i-etc-2.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-beauty-p {
+    background: url(../kw-img/ico/i-beauty-p.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.i-shopping-g {
+    background: url(../kw-img/ico/i-shopping-g.png);
+    height: 1.5rem;
+    width: 1.5rem;
+}

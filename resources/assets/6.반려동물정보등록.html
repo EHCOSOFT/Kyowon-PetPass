@@ -7,7 +7,7 @@
     <meta name="viewport"
         content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <title>Pet PASS</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/kw-style.css">
 </head>
 
 <body>
@@ -133,7 +133,7 @@
                                 </div>
                             </h5>
                             <div class="radio-area">
-                                <div class="radio-group">
+                                <div class="radio-group" onclick="showToast('맹견의 경우 입장이 불가합니다.')">
                                     <input type="radio" id="radio08" name="dog">
                                     <label for="radio08">예</label>
                                 </div>
@@ -180,7 +180,7 @@
                                     <input type="radio" id="radio12" name="vaccine">
                                     <label for="radio12">완료</label>
                                 </div>
-                                <div class="radio-group">
+                                <div class="radio-group" onclick="showToast('1년이내 광견병 백신 미접종 시 입장이 불가합니다.')">
                                     <input type="radio" id="radio13" name="vaccine">
                                     <label for="radio13">미완료</label>
                                 </div>
@@ -201,7 +201,7 @@
                                     <input type="radio" id="radio14" name="comprehensive-vaccine">
                                     <label for="radio14">완료</label>
                                 </div>
-                                <div class="radio-group">
+                                <div class="radio-group" onclick="showToast('1년이내 종합백신 미접종 시 입장이 불가합니다.')">
                                     <input type="radio" id="radio15" name="comprehensive-vaccine">
                                     <label for="radio15">미완료</label>
                                 </div>
@@ -243,7 +243,21 @@
 
     <!-- START : Script -->
     <script src="lib/jquery.min.js"></script>
-    <script src="js/common.js"></script>
+
+    <script>
+        function showToast(message) {
+            $('.toast').remove();
+            var toast = $('<div class="toast"><i class="ico i-toast"></i>' + message + '</div>');
+            $('body').append(toast);
+
+            toast.addClass('show');
+
+            setTimeout(function () {
+                toast.removeClass('show');
+            }, 3000);
+        }
+    </script>
+    <script src="js/kw-common.js"></script>
     <!-- END : Script -->
 </body>
 

@@ -548,7 +548,7 @@ input:disabled {
 }
 
 .check-group label::before {
-    background: url(../img/ico/i-checkbox.png);
+    background: url(../kw-img/ico/i-checkbox.png);
     background-size: cover;
     content: '';
     display: inline-block;
@@ -559,7 +559,7 @@ input:disabled {
 }
 
 .check-group input:checked+label::before {
-    background: url(../img/ico/i-checkbox-checked.png);
+    background: url(../kw-img/ico/i-checkbox-checked.png);
     background-size: cover;
 }
 
@@ -668,7 +668,7 @@ input:disabled {
 }
 
 .select-group select {
-    background: var(--kw-white) url(../img/ico/i-arrow-down.png) no-repeat 50%/20px;
+    background: var(--kw-white) url(../kw-img/ico/i-arrow-down.png) no-repeat 50%/20px;
     background-position: right 12px center;
     border: 1px solid var(--kw-black-100);
     border-radius: 0.5rem;
@@ -794,4 +794,57 @@ input:disabled {
     border-top-right-radius: 0;
     left: auto;
     right: 0;
+}
+
+.toast {
+    align-items: center;
+    background: var(--kw-secondary);
+    border-radius: 0.75rem;
+    bottom: 5.75rem;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    left: 50%;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    position: fixed;
+    text-align: left;
+    transform: translateX(-50%);
+    visibility: hidden;
+    z-index: 1;
+    width: calc(100% - 40px);
+}
+
+.toast i {
+    flex: 0 0 auto;
+}
+
+.toast.show {
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    visibility: visible;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 92px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 92px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }

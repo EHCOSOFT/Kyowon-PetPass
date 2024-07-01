@@ -6,37 +6,43 @@
 }
 
 .i-back {
-    background: url(../img/ico/i-back.png);
+    background: url(../kw-img/ico/i-back.png);
     height: 1.5rem;
     width: 1.5rem;
 }
 
 .i-x {
-    background: url(../img/ico/i-x.png);
+    background: url(../kw-img/ico/i-x.png);
     height: 1.5rem;
     width: 1.5rem;
 }
 
 .i-arrow-right {
-    background: url(../img/ico/i-arrow-right.png);
+    background: url(../kw-img/ico/i-arrow-right.png);
     height: 0.75rem;
     width: 0.75rem;
 }
 
 .i-chevron-right {
-    background: url(../img/ico/i-chevron-right.png);
+    background: url(../kw-img/ico/i-chevron-right.png);
     height: 1rem;
     width: 1rem;
 }
 
 .i-tooltip {
-    background: url(../img/ico/i-tooltip.png);
+    background: url(../kw-img/ico/i-tooltip.png);
     height: 1rem;
     width: 1rem;
 }
 
 .i-check {
-    background: url(../img/ico/i-check.png);
+    background: url(../kw-img/ico/i-check.png);
+    height: 1rem;
+    width: 1rem;
+}
+
+.i-toast {
+    background: url(../kw-img/ico/i-toast.png);
     height: 1rem;
     width: 1rem;
 }

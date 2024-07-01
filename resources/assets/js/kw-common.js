@@ -42,6 +42,21 @@ $(document).ready(function () {
         $('.bottom-sheet').removeClass('active');
         $('.overlay').removeClass('active');
     });
+
+    /***
+       * 토스트팝업
+    ****/
+    function showToast(message) {
+        $('.toast').remove();
+        var toast = $('<div class="toast"><i class="ico i-toast"></i>' + message + '</div>');
+        $('body').append(toast);
+
+        toast.addClass('show');
+
+        setTimeout(function() {
+            toast.removeClass('show');
+        }, 3000);
+    }
 });
 
 function setAppHeight() {
