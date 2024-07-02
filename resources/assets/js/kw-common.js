@@ -7,7 +7,7 @@ $(document).ready(function () {
         // 약관 전체 동의 체크박스의 상태를 가져옴
         var isChecked = $(this).prop("checked");
         // 아래에 있는 모든 체크박스의 상태를 약관 전체 동의 체크박스와 동일하게 설정
-        $(".check-group input[type='checkbox']").prop("checked", isChecked);
+        $(".kw-check-group input[type='checkbox']").prop("checked", isChecked);
     });
 
     /***
@@ -43,20 +43,6 @@ $(document).ready(function () {
         $('.overlay').removeClass('active');
     });
 
-    /***
-       * 토스트팝업
-    ****/
-    function showToast(message) {
-        $('.toast').remove();
-        var toast = $('<div class="toast"><i class="ico i-toast"></i>' + message + '</div>');
-        $('body').append(toast);
-
-        toast.addClass('show');
-
-        setTimeout(function() {
-            toast.removeClass('show');
-        }, 3000);
-    }
 });
 
 function setAppHeight() {

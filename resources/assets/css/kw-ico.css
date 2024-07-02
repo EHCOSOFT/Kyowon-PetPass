@@ -17,12 +17,6 @@
     width: 1.5rem;
 }
 
-.i-arrow-right {
-    background: url(../kw-img/ico/i-arrow-right.png);
-    height: 0.75rem;
-    width: 0.75rem;
-}
-
 .i-chevron-right {
     background: url(../kw-img/ico/i-chevron-right.png);
     height: 1rem;
@@ -35,8 +29,8 @@
     width: 1rem;
 }
 
-.i-check {
-    background: url(../kw-img/ico/i-check.png);
+.i-kw-check {
+    background: url(../kw-img/ico/i-kw-check.png);
     height: 1rem;
     width: 1rem;
 }
