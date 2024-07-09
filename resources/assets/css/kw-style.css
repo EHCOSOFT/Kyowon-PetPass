@@ -345,6 +345,7 @@
  * 7. 출입QR
  * **************************************** */
 .swiper-slide {
+    background: none;
     text-align: center;
     display: flex;
     justify-content: center;
