@@ -74,7 +74,6 @@
 
 :root,
 html {
-    background: red;
     font-size: var(--kw-body-font-size);
 }
 
