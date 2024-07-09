@@ -74,6 +74,7 @@
 
 :root,
 html {
+    background: red;
     font-size: var(--kw-body-font-size);
 }
 
@@ -84,10 +85,19 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-    min-height: 100vh;
-    height: var(--app-height);
+    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
+    min-height: 540px;
 }
+
+body[orient="portrait"] {
+    min-height: 540px;
+}
+
+body[orient="landscape"] {
+    min-height: 400px;
+}
+
 
 a {
     transition: .5s all;
@@ -251,6 +261,7 @@ h6,
 main {
     flex: 1;
 }
+
 /* **************************************** *
  * Button
  * **************************************** */

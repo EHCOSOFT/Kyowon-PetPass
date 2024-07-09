@@ -25,31 +25,22 @@ $(document).ready(function () {
     /***
        * 반려동물 선택
     ****/
-    $('.pet-item-bottom button').on('click', function() {
+    $('.pet-item-bottom button').on('click', function () {
         $(this).closest('.pet-item').toggleClass('active');
     });
 
     /***
        * Bottom Sheet
     ****/
-    $('.btn-open').on('click', function() {
+    $('.btn-open').on('click', function () {
         var target = $(this).data('target');
         $(target).addClass('active');
         $('.overlay').addClass('active');
     });
 
-    $('.btn-close, .overlay').on('click', function() {
+    $('.btn-close, .overlay').on('click', function () {
         $('.bottom-sheet').removeClass('active');
         $('.overlay').removeClass('active');
     });
 
 });
-
-function setAppHeight() {
-    const appHeight = window.innerHeight;
-    document.documentElement.style.setProperty('--app-height', `${appHeight}px`);
-}
-
-window.addEventListener('DOMContentLoaded', setAppHeight);
-window.addEventListener('resize', setAppHeight);
-window.addEventListener('orientationchange', setAppHeight);
