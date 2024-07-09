@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-    /* overflow: hidden; */
+    min-height: 100vh;
     height: var(--app-height);
     margin: 0;
 }
