@@ -18,7 +18,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    height: var(--app-height);
+    height: calc(var(--vh, 1vh) * 100);
     position: relative;
 }
 
