@@ -498,6 +498,11 @@ button:disabled {
     color: var(--kw-black-400);
 }
 
+.kw-input-group.stress input::placeholder {
+    color: var(--kw-black-700);
+    font-weight: 700;
+}
+
 .kw-input-group small {
     color: var(--kw-red);
     font-size: var(--kw-text-sm);
@@ -865,4 +870,114 @@ button:disabled {
         bottom: 0;
         opacity: 0;
     }
+}
+
+
+/* **************************************** *
+ * kw-modal
+ * **************************************** */
+.kw-modal-wrap {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    display: none;
+    height: 100%;
+    position: fixed;
+    transition: opacity 1s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.kw-modal-wrap.active {
+    display: flex;
+    transition: opacity 1s ease;
+}
+
+.kw-modal-inner {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    transform: translateY(0);
+    width: 100%;
+}
+
+.kw-modal-content {
+    background-color: var(--kw-white);
+    border-radius: 0.5rem;
+    opacity: 0;
+    padding: 1.25rem;
+    position: relative;
+    transform: translateY(-3.125rem);
+    text-align: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    max-width: 324px;
+    width: 100%;
+}
+
+.kw-modal-wrap.active .kw-modal-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 추가된 스타일: 애니메이션 초기화 */
+.kw-modal-wrap.active .kw-modal-inner {
+    animation: kw-modalSlideDown 0.5s ease;
+}
+
+@keyframes kw-modalSlideDown {
+    from {
+        transform: translateY(-1.25rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.kw-modal-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.kw-modal-header.vertical {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.kw-modal-header h5 {
+    text-align: left;
+}
+
+.kw-modal-header button {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.kw-modal-title {
+    color: var(--pass-black-03);
+    font-size: 22px;
+    text-align: center;
+}
+
+.kw-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: scroll;
+    max-height: calc(100vh - 400px);
+    margin: 16px 0;
+}
+
+.kw-modal-body p {
+    color: var(--kw-black-700);
+    font-size: var(--kw-text-md);
+    font-weight: 400;
+    text-align: left;
 }
